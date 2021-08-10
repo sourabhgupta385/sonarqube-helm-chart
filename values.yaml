@@ -1,0 +1,16 @@
+app_name: "sonarqube"
+replica_count: 1
+
+image: "sonarqube:lts"
+imagePullPolicy: IfNotPresent
+
+resources:
+  limits:
+    cpu: '1'
+    memory: 3Gi
+  requests:
+    cpu: 200m
+    memory: 1Gi
+  storage_requests: 3Gi
+
+app_host: ""
